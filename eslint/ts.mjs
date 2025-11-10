@@ -12,12 +12,17 @@ export default {
   ],
   files: [
     '**/*.ts',
+    '**/*.mjs',
     '*.mjs',
   ],
   languageOptions: {
+    globals: {
+      process: 'readonly',
+    },
     parserOptions: {
       projectService: {
         allowDefaultProject: [
+          '*/*.mjs',
           '*.mjs',
         ],
       },
@@ -125,10 +130,22 @@ export default {
     '@typescript-eslint/no-magic-numbers': 'off',
     '@typescript-eslint/no-unnecessary-type-parameters': 'off',
     '@typescript-eslint/no-unsafe-type-assertion': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        caughtErrors: 'none',
+      },
+    ],
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/prefer-for-of': 'off',
     '@typescript-eslint/prefer-readonly': 'off',
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
+    '@typescript-eslint/unbound-method': [
+      'error',
+      {
+        ignoreStatic: true,
+      },
+    ],
     'arrow-body-style': 'off',
     'capitalized-comments': 'off',
     'complexity': 'off',

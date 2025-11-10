@@ -59,7 +59,7 @@
   },
   "scripts": {
     "init": "git config core.hooksPath .githooks",
-    "lint": "tsc && eslint *.mjs",
+    "lint": "eslint **/*.mjs *.mjs",
     "test": "exit 0"
   },
   "version": "0.0.0"
