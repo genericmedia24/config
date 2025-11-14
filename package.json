@@ -1,14 +1,12 @@
 {
   "author": "Koen van den Boogaart <koen@genericmedia.nl>",
   "bugs": "https://github.com/genericmedia24/config/issues",
-  "dependencies": {
-    "swiped-events": "^1.2.0"
-  },
-  "description": "A custom config element",
+  "description": "Shareable config",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@html-eslint/eslint-plugin": "^0.48.0",
     "@html-eslint/parser": "^0.48.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
@@ -58,8 +56,9 @@
     "url": "git+https://github.com/genericmedia24/config.git"
   },
   "scripts": {
-    "init": "git config core.hooksPath .githooks",
+    "link": "exit 0",
     "lint": "eslint **/*.mjs *.mjs",
+    "make": "exit 0",
     "test": "exit 0"
   },
   "version": "0.0.0"

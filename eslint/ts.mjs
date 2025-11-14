@@ -11,7 +11,7 @@ export default {
     perfectionist.configs['recommended-alphabetical'],
   ],
   files: [
-    '**/*.ts',
+    'src/**/*.ts',
     '**/*.mjs',
     '*.mjs',
   ],

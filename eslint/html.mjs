@@ -5,7 +5,7 @@ export default {
     html.configs.recommended,
   ],
   files: [
-    '**/*.html',
+    'src/**/*.html',
   ],
   language: 'html/html',
   rules: {
