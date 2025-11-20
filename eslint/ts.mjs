@@ -168,6 +168,7 @@ export default {
         newlinesBetween: 'never',
       },
     ],
+    'prefer-regex-literals': 'off',
     'sort-imports': 'off',
     'sort-keys': 'off',
   },
