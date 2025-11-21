@@ -19,6 +19,13 @@ export default {
     /@genericmedia\//gui,
   ],
   input: 'src/index.ts',
+  onwarn(message, warn) {
+    if (message.code === 'CIRCULAR_DEPENDENCY') {
+      return
+    }
+
+    warn(message)
+  },
   output: {
     banner: `/*! ${pkg.name} v${pkg.version} | @license ${pkg.license} */`,
     file: 'dist/index.js',
